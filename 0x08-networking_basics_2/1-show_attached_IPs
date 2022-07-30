@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script diplays all active IPV4 IPS on a machine
 
-ipconfig | grep "inet addr" | awk '{print $2}' | cut -d':' -f2
+ifconfig -a | grep "inet addr" | awk '{print $2}' | cut -d':' -f2
