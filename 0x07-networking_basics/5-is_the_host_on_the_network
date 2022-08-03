@@ -4,5 +4,5 @@ if [ "$1" ]
 then
     ping -c 5 "$1"
 else
-     echo "${0##*/} {IP_ADDRESS}"
+     echo "Usage: ${0##*/} {IP_ADDRESS}"
 fi
